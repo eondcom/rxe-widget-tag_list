@@ -17,8 +17,11 @@
         function proc($args) {
             // 제목
             $title = $args->title;
-
-            // 출력된 목록 수
+			
+            // 시간
+			$hours = preg_match('/[^0-9]/', $args->hours)?'':$args->hours;
+            
+			// 출력된 목록 수
             $list_count = (int)$args->list_count;
             if(!$list_count) $list_count = 20;
             $list_count ++;
@@ -60,7 +63,7 @@
             }
             $args->module_srl = implode(",",$module_srl);
             $args->list_count = $list_count;
-
+			$args->order_target = 'regdate';
 			$output = executeQueryArray('widgets.tag_list.getTagList', $args);
 
             $widget_info->title = $title;
@@ -70,6 +73,7 @@
                 $max = 0;
                 $min = 99999999;
                 foreach($output->data as $key => $val) {
+					if($hours&&$val->regdate<date('YmdHis', strtotime('-'.$hours.' hours'))) continue;
                     $tag = trim($val->tag);
                     if(!$tag) continue;
                     $count = $val->count;

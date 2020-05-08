@@ -5,7 +5,8 @@
     </tables>
     <columns>
         <column name="tag" />
-        <column name="count(*)" alias="count" />
+		<column name="count(*)" alias="count" />
+		<column name="T.regdate" />
     </columns>
     <conditions>
         <condition operation="equal" column="T.document_srl" default="D.document_srl" />
@@ -14,7 +15,7 @@
         <condition operation="in" column="T.module_srl" var="module_srls" pipe="and" />
     </conditions>
     <navigation>
-        <index var="count" default="count" order="desc" />
+		<index var="order_target" default="count" order="desc" />
         <list_count var="list_count" default="20" />
     </navigation>
     <groups>
