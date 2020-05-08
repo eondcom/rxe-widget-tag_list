@@ -1,0 +1,8 @@
+.tag_list .items span  a { text-decoration:none; color:#47b8e0; display:inline-block; margin:0 15px 15px 0; padding: 5px 14px;background-color: #ffffff;border: 1px solid #dddddd;border-radius: 5px;font-size:14px; }
+.tag_list .items span  a:hover { text-decoration:none;background-color: #dddddd;}
+.tag_list .items .type1 a { font-weight:bold; font-size:18px; color :#ff7473}
+.tag_list .items .type2 a { font-size:18px; color :#f9c00c }
+.tag_list .items .type3 a { font-weight:bold; font-size:14px; }
+.tag_list .items .type4 a {  }
+
+.blog_widget_black .tag_list .items span  a { color:#fff; }

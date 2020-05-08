@@ -1,0 +1,35 @@
+<!--%import("js/swfobject.js")-->
+
+<!--@if($colorset=='red')-->
+    {@$tcolor='0xFF0000';}
+    {@$tcolor2='0x333333';}
+<!--@else if($colorset=='blue')-->
+    {@$tcolor='0x5391d0';}
+    {@$tcolor2='0x333333';}
+<!--@else if($colorset=='white')-->
+    {@$tcolor='0xEBEBEB';}
+    {@$tcolor2='0x333333';}
+<!--@else-->
+    {@$tcolor='0x626262';}
+    {@$tcolor2='0x333333';}
+<!--@end-->
+
+{@$soname = 'tag_' . rand(0,9999999);}
+<div id="div_{$soname}"><p style="display:none">
+<!--@if($widget_info->mid)-->
+    <a href="{getUrl('','mid',$widget_info->mid,'search_target','tag','search_keyword',$val->tag)}">{htmlspecialchars($val->tag)}</a>
+<!--@else-->
+    <!--@if($layout_info->mid)-->
+        <a href="{getUrl('','mid',$layout_info->mid,'search_target','tag','search_keyword',$val->tag)}">{htmlspecialchars($val->tag)}</a>
+    <!--@else-->
+        <a href="{getUrl('act','IS','where','document','search_target','tag','is_keyword',$val->tag)}">{htmlspecialchars($val->tag)}</a>
+    <!--@end-->
+<!--@end--></p>
+<script type="text/javascript">
+
+displayMultimedia("{$request_uri}/widgets/tag_list/skins/treasurej_tagcloud/img/tagcloud.swf", "100%", "100%", 
+{
+flashvars : "tcolor={$tcolor}&tcolor2={$tcolor2}&hicolor={$tcolor}&tspeed=100&distr=true&mode=tags&tagcloud={@print urlencode('<tags>')}<!--@foreach($widget_info->tag_list as $val)--><!--@if($widget_info->mid)-->{@print urlencode('<a title="5 topics" rel="tag" style="font-size: 14px;" href="'. getUrl('','mid',$widget_info->mid,'search_target','tag','search_keyword',$val->tag). '">'. $val->tag .'</a>');}<!--@else--><!--@if($layout_info->mid)-->{@print urlencode('<a title="8 topics" rel="tag" style="font-size: 12px;" href="'. getUrl('','mid',$layout_info->mid,'search_target','tag','search_keyword',$val->tag) . '">'. $val->tag . '</a>');}<!--@else-->{@print urlencode('<a title="8 topics" rel="tag" style="font-size: 16px;" href="' . getUrl('act','DS','where','document','search_target','tag','is_keyword',$val->tag) . '">' . $val->tag . '</a>');}<!--@end--><!--@end--><!--@end-->{@print urlencode('</tags>');}"
+});
+</script>
+</div>

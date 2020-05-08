@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+    <title xml:lang="ko">eondLupang 태그 위젯</title>
+    <title xml:lang="en">eondLupang Tag Widget</title>
+    <version>0.1</version>
+    <date>2017-12-16</date>
+    <link>http://eond.com</link>
+
+    <author email_address="eond@eond.com" link="http://eond.com">
+        <name xml:lang="ko">이온디</name>
+        <name xml:lang="en">EOND</name>
+    </author>
+
+    <colorset>
+        <color name="default">
+            <title xml:lang="ko">기본</title>
+            <title xml:lang="en">Default</title>
+        </color>
+        <color name="womanclothe">
+            <title xml:lang="ko">womanclothe[#f6699e]</title>
+            <title xml:lang="en">womanclothe[#f6699e]</title>
+        </color>
+        <color name="manclothe">
+            <title xml:lang="ko">manclothe[#1992df]</title>
+            <title xml:lang="en">manclothe[#1992df]</title>
+        </color>
+        <color name="beauty">
+            <title xml:lang="ko">beauty[#7e57c2]</title>
+            <title xml:lang="en">beauty[#7e57c2]</title>
+        </color>
+        <color name="baby">
+            <title xml:lang="ko">baby [#00aad4]</title>
+            <title xml:lang="en">baby [#00aad4]</title>
+        </color>
+        <color name="food">
+            <title xml:lang="ko">food[#e68d1d]</title>
+            <title xml:lang="en">food[#e68d1d]</title>
+        </color>
+        <color name="kitchen">
+            <title xml:lang="ko">kitchen[#62ab66]</title>
+            <title xml:lang="en">kitchen[#62ab66]</title>
+        </color>
+        <color name="living">
+            <title xml:lang="ko">living[#9d7a6d]</title>
+            <title xml:lang="en">living[#9d7a6d]</title>
+        </color>
+        <color name="homedecoration">
+            <title xml:lang="ko">homedecoration[#dd704d]</title>
+            <title xml:lang="en">homedecoration[#dd704d]</title>
+        </color>
+        <color name="digital">
+            <title xml:lang="ko">digital[#5868be]</title>
+            <title xml:lang="en">digital[#5868be]</title>
+        </color>
+        <color name="sports">
+            <title xml:lang="ko">sports[#83be41]</title>
+            <title xml:lang="en">sports[#83be41]</title>
+        </color>
+        <color name="car">
+            <title xml:lang="ko">car[#254e98]</title>
+            <title xml:lang="en">car[#254e98]</title>
+        </color>
+        <color name="hobby">
+            <title xml:lang="ko">hobby[#3e8d86]</title>
+            <title xml:lang="en">hobby[#3e8d86]</title>
+        </color>
+        <color name="office">
+            <title xml:lang="en">office[#97563e]</title>
+            <title xml:lang="ko">office[#97563e]</title>
+        </color>
+        <color name="book">
+            <title xml:lang="ko">book[#b74b4b]</title>
+            <title xml:lang="en">book[#b74b4b]</title>
+        </color>
+        <color name="pets">
+            <title xml:lang="ko">pets[#ab47bc]</title>
+            <title xml:lang="en">pets[#ab47bc]</title>
+        </color>
+        <color name="travel">
+            <title xml:lang="ko">travel[#00b599]</title>
+            <title xml:lang="en">travel[#00b599]</title>
+        </color>
+        <color name="babyfashion">
+            <title xml:lang="ko">babyfashion[#00aab4]</title>
+            <title xml:lang="en">babyfashion[#00aab4]</title>
+        </color>
+        <color name="health">
+            <title xml:lang="ko">health[#d22e60]</title>
+            <title xml:lang="en">health[#d22e60]</title>
+        </color>
+
+
+    </colorset>
+</skin>

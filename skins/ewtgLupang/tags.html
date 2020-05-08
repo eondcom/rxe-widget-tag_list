@@ -1,0 +1,10 @@
+<load target="ewtgLupang.css" />
+<div class="ewtgLupang {$colorset}">
+	<!--@foreach($widget_info->tag_list as $val)-->
+	<!--@if($widget_info->mid)-->
+	<a href="{getUrl('','mid',$widget_info->mid,'search_target','tag','search_keyword',$val->tag)}">{htmlspecialchars($val->tag)}</a>
+	<!--@else-->
+	<a href="{getUrl('act','IS','where','document','search_target','tag','is_keyword',$val->tag)}">{htmlspecialchars($val->tag)}</a>
+	<!--@end-->
+	<!--@end-->
+</div>

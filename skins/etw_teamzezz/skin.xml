@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+	<title xml:lang="ko">팀제쯔 태그위젯스킨</title>
+	<title xml:lang="jp">でフィルとタグリスト表示</title>
+	<title xml:lang="zh-CN">标签云默认皮肤</title>
+	<title xml:lang="en">Default Display Tag List</title>
+	<title xml:lang="zh-TW">Default 標籤列表面板</title>
+	<description xml:lang="ko">꼬리표 목록을 출력합니다.</description>
+	<description xml:lang="jp">タグリストを表示します。</description>
+	<description xml:lang="zh-CN">标签云默认皮肤。</description>
+	<description xml:lang="en">It displays tag list.</description>
+	<description xml:lang="zh-TW">顯示標籤列表。</description>
+	<version>0.1</version>
+	<date>2020-05-05</date>
+	<link>http://eond.com</link>
+
+	<author email_address="eond@eond.com" link="http://eond.com">
+		<name xml:lang="ko">EOND</name>
+	</author>
+
+	<colorset>
+        <color name="layout">
+            <title xml:lang="ko">레이아웃에 맞춤</title>
+        </color>
+        <color name="white">
+            <title xml:lang="ko">하얀색(지원안함)</title>
+        </color>
+        <color name="black">
+            <title xml:lang="ko">검은색(지원안함)</title>
+        </color>
+	</colorset>
+</skin>

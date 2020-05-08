@@ -1,0 +1,15 @@
+<load target="assets/css/etw_teamzezz.min.css" />
+<div class="etw_teamzezz">
+	<h3 cond="$widget_info->title">{$widget_info->title}</h3>
+    <ul>
+        <!--@foreach($widget_info->tag_list as $val)-->
+        <li class="lv{$val->rank}">
+            <!--@if($widget_info->mid)-->
+                <a href="{getUrl('','mid',$widget_info->mid,'search_target','tag','search_keyword',$val->tag)}">#{htmlspecialchars($val->tag)}</a>
+            <!--@else-->
+                <a href="{getUrl('act','IS','where','document','search_target','tag','is_keyword',$val->tag)}">#{htmlspecialchars($val->tag)}</a>
+            <!--@end-->
+        </li>
+        <!--@end-->
+    </ul>
+</div>
